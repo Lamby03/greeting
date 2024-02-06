@@ -1,34 +1,15 @@
-import React from 'react';
-import './index.css';
+const lamby = "learner";
 
-function App(){
+const prog = 'reactjs';
 
-let curDate = new Date(2024, 5, 5, 22);
-curDate = curDate.getHours();
-
-let greeting = '';
-const greetStyle = {};
-
-if(curDate >= 1 && curDate < 12){
-  greeting = 'Good Morning';
-  greetStyle.color = 'green';
-}else if(curDate >= 12 && curDate < 19){
-  greeting = 'Good Afternoon';
-  greetStyle.color = 'Orange';
-
-}else {
-  greeting = 'Good Night';
-  greetStyle.color = 'Purple';
-
+function myName() {
+  let name = "Om"
+  return name;
+}
+function mySname() {
+  let sname = "Lambade"
+  return sname;
 }
 
-return(
-  <>
-  <div>
-  <h1> Hello Sir, <span style={greetStyle}>{greeting}</span></h1>,
-  </div>
-  </>
-);
-}
-
-export default App;
+export default lamby;
+export {prog, myName, mySname};
